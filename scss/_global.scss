@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: white;
+  max-width: 144rem;
+  margin: 0 auto;
+
+  @include breakpoint-down(small) {
+    font-size: 3rem;
+  }
+}
+
+.button {
+  color: $violet;
+  padding: 1.6rem 6rem;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  @include breakpoint-down(small) {
+    padding: 3rem 15rem;
+  }
+
+  &:hover {
+    background-color: $softMagenta;
+    color: white;
+  }
+}
