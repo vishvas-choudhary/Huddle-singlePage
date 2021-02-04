@@ -17,8 +17,8 @@ body {
   max-width: 144rem;
   margin: 0 auto;
 
-  @include breakpoint-down(small) {
-    font-size: 3rem;
+  @include breakpoint-down(medium) {
+    font-size: 2.9rem;
   }
 }
 
@@ -27,7 +27,7 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 
-  @include breakpoint-down(small) {
+  @include breakpoint-down(medium) {
     font-size: 4rem;
   }
 }
@@ -47,7 +47,7 @@ a {
   box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.5);
   transition: all 0.2s ease-in-out;
 
-  @include breakpoint-down(small) {
+  @include breakpoint-down(medium) {
     padding: 3rem 15rem;
   }
 

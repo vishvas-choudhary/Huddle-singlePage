@@ -19,9 +19,9 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 1023px) {
   body {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 }
 
@@ -31,7 +31,7 @@ h1 {
   font-weight: 700;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 1023px) {
   h1 {
     font-size: 4rem;
   }
@@ -55,7 +55,7 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 1023px) {
   .button {
     padding: 3rem 15rem;
   }
@@ -74,16 +74,30 @@ main {
   background-color: #674baf;
   background-image: url(../images/bg-desktop.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
+  background-size: 85%;
+  background-position: center top;
   width: 100%;
-  height: 80rem;
+}
+
+@media (max-width: 1023px) {
+  main {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: 100%;
+  }
 }
 
 .header__logo {
   width: 21rem;
   margin-top: 6rem;
   margin-bottom: 10rem;
+}
+
+@media (max-width: 1023px) {
+  .header__logo {
+    width: 24rem;
+    margin-top: 7rem;
+    margin-bottom: 13.5rem;
+  }
 }
 
 .hero {
@@ -100,33 +114,77 @@ main {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1023px) {
+  .hero {
+    display: block;
+    text-align: center;
+  }
+}
+
 .hero figure {
   -webkit-box-flex: 1.72;
       -ms-flex: 1.72;
           flex: 1.72;
+  display: inline-block;
 }
 
 .hero figure img {
-  width: 70rem;
+  display: inline-block;
+  width: 72rem;
+}
+
+@media (max-width: 1023px) {
+  .hero figure img {
+    width: 100%;
+  }
 }
 
 .hero .text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: -15rem;
+  padding-top: 5rem;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+@media (max-width: 1023px) {
+  .hero .text {
+    padding-top: 13rem;
+    margin-bottom: 12rem;
+  }
 }
 
 .hero .text h1 {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 1023px) {
+  .hero .text h1 {
+    margin-bottom: 5.5rem;
+  }
+}
+
 .hero .text p {
   margin-bottom: 2.5rem;
 }
 
+@media (max-width: 1023px) {
+  .hero .text p {
+    margin-bottom: 5.5rem;
+  }
+}
+
 .footer {
   text-align: right;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    text-align: center;
+    padding-bottom: 7.5rem;
+  }
 }
 
 .footer a {
